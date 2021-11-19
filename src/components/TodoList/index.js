@@ -25,7 +25,7 @@ const TodoList = () => {
     <div className="todo-list">
       <span className="todo-list-title">Things to do:</span>
       {todos.length ? (
-        <div className="todo-list-content">
+        <div className="todo-list-content flex-wrap">
           {todos.map((todoItem) => (
             <Checkbox
               key={todoItem.id}
